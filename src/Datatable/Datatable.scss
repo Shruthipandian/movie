@@ -1,0 +1,46 @@
+@import "../App.scss";
+
+.content{
+    width: 100vw;
+    display: flex;
+
+    .content_left{
+        flex: 0.5;
+
+        .content_details{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 30px;
+            border-bottom: 1px solid $color3;
+
+            .details{
+                flex: 0.2;
+            }
+            .details_movie{
+                flex: 0.6;
+            }
+
+        }
+    }
+
+    .content_right{
+        flex: 0.5;
+        border-left: 1px solid $color3;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+
+        .no_movie{
+            margin: auto;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 15px;   
+        }
+        .directed_by{
+            font-style: italic;
+        }
+    }
+}
